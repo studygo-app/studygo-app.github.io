@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StudyGO-alpha - обратная связь</title>
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="StudyGO">
+    <meta name="application-name" content="StudyGO">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="com/config.js?0a0ea86f42d0097d4d66d15cc03ae4cd61f6c"></script>
+    <script src="google-form.js?0a0ea86f42d0097d4d66d15cc03ae4cd61f6c"></script>
+</head>
+<body>
+<div class="container">
+    <div class="intro">
+        <p class="logo" style="margin-bottom: 12px;margin-top: 12px;">StudyGO</p>
+        <hr>
+    </div>
+    <div class="text" id="start">
+        <p class="first">Спасибо, что присоединились к нам!</p>
+        <p style="margin: 0 10px">Удели нам пару минут и ответь на несколько вопросов о приложении. Этим ты здорово
+            поможешь развитию проекта.<br><br>
+            Данные передаются в обезличенном виде<sup style="color: #89c3db;">1</sup>. Мы никак не сможем связать с тобой тобой ответы.</p>
+        <p>
+            <button id="button-go" style="margin-top: 1em;">Поехали >></button>
+        </p>
+        <p style="text-align: left; font-size: 0.7em;margin-top: 1.5em;">1 - подтверждение страницы через ВК или по номеру телефона
+            используется только для защиты от спама. Мы никак не связываем эти данные с твоим аккаунтом.</p>
+    </div>
+    <div class="text hidden" id="form-1">
+        <p class="before-first">Давай знакомиться!<br>Расскажи немного о себе.</p>
+        <p class="first">В каком классе ты учишься?</p>
+        <fieldset>
+            <p><label for="1-first" style="display: block;"><input type="radio" id="1-first" name="q1" value="1">1-4</label></p>
+            <p><label for="1-second"><input type="radio" id="1-second" name="q1" value="2">5-8</label></p>
+            <p><label for="1-third"><input type="radio" id="1-third" name="q1" value="3">9-11</label></p>
+            <p><label for="1-fourth"><input type="radio" id="1-fourth" name="q1" value="4">я родитель/абитуриент</label></p>
+        </fieldset>
+        <button id="button-1">Дальше</button>
+        <p class="bar"><span
+                class="red">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+    </div>
+    <div class="text hidden" id="form-2">
+        <p class="first">Какая из этих платформ на твой взгляд самая популярная?</p>
+        <fieldset>
+            <p><label for="2-first"><input type="radio" id="2-first" name="q2" value="1">Умксул</label></p>
+            <p><label for="2-second"><input type="radio" id="2-second" name="q2" value="2">Вебиум</label></p>
+            <p><label for="2-third"><input type="radio" id="2-third" name="q2" value="3">Фоксфорд</label></p>
+            <p><label for="2-fourth"><input type="radio" id="2-fourth" name="q2" value="4">Школково</label></p>
+        </fieldset>
+        <button id="button-2">Дальше</button>
+        <p class="bar"><span class="red">1</span><span
+                class="red">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+    </div>
+    <div class="text hidden" id="form-3">
+        <p class="first">Сколько часов в день ты занимаешься подготовкой?</p>
+        <p class="before-first">К олимпиадам, ГИА, ВПР и т.д., помимо школы</p>
+        <fieldset>
+            <p><label for="3-first"><input type="radio" id="3-first" name="q3" value="1">1-2</label></p>
+            <p><label for="3-second"><input type="radio" id="3-second" name="q3" value="2">3-5</label></p>
+            <p><label for="3-third"><input type="radio" id="3-third" name="q3" value="3">6 и больше</label></p>
+            <p><label for="3-fourth"><input type="radio" id="3-fourth" name="q3" value="4">Готовлюсь только в школе</label></p>
+        </fieldset>
+        <button id="button-3">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+    </div>
+    <div class="text hidden" id="form-4">
+        <p class="first">Какой школьный предмет тебе нравится больше?</p>
+        <fieldset>
+            <p><label for="4-first"><input type="radio" id="4-first" name="q4" value="1">Литература</label></p>
+            <p><label for="4-second"><input type="radio" id="4-second" name="q4" value="2">История</label></p>
+            <p><label for="4-third"><input type="radio" id="4-third" name="q4" value="3">Иностранный язык</label></p>
+            <p><label for="4-fourth"><input type="radio" id="4-fourth" name="q4" value="4">Физика<br><sup class="small">бывает
+                и такое</sup></label></p>
+        </fieldset>
+        <button id="button-4">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+
+    </div>
+    <div class="text hidden" id="form-5">
+        <p class="first">До какого этапа Всероса ты доходила?</p>
+        <fieldset>
+            <p><label for="5-first"><input type="radio" id="5-first" name="q5" value="1">Муницип/город</label></p>
+            <p><label for="5-second"><input type="radio" id="5-second" name="q5" value="2">Региональный</label></p>
+            <p><label for="5-third"><input type="radio" id="5-third" name="q5" value="3">Заключительный</label></p>
+            <p><label for="5-fourth"><input type="radio" id="5-fourth" name="q5" value="4">Не участвовала</label></p>
+        </fieldset>
+        <button id="button-5">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span
+                class="red">5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+    </div>
+    <div class="text hidden" id="form-6">
+        <p class="first">Есть ли у тебя хобби, которые тебе интересно обсуждать?</p>
+        <p class="before-first">Кроме всего, что связано с учебой</p>
+        <fieldset>
+            <p><label for="6-first"><input type="radio" id="6-first" name="q6" value="1">Да, много</label></p>
+            <p><label for="6-second"><input type="radio" id="6-second" name="q6" value="2">Да, одно-два</label></p>
+            <p><label for="6-third"><input type="radio" id="6-third" name="q6" value="3">Да, но я не люблю обсуждать это</label></p>
+            <p><label for="6-fourth"><input type="radio" id="6-fourth" name="q6" value="4">Нет, бот one love</label></p>
+        </fieldset>
+        <button id="button-6">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span
+                class="red">6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+    </div>
+    <div class="text hidden" id="form-7">
+        <p class="first">Как ты оцениваешь свое сп?</p>
+        <p class="before-first">Только честно, нам это нужно для сухой статистики</p>
+        <fieldset>
+            <p><label for="7-first"><input type="radio" id="7-first" name="q7" value="1">Я одна</label></p>
+            <p><label for="7-second"><input type="radio" id="7-second" name="q7" value="2">В поиске</label></p>
+            <p><label for="7-third"><input type="radio" id="7-third" name="q7" value="3">В отношениях</label></p>
+            <p><label for="7-fourth"><input type="radio" id="7-fourth" name="q7" value="4">В браке</label></p>
+        </fieldset>
+        <button id="button-7">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </p>
+
+    </div>
+    <div class="text hidden" id="form-8">
+        <p class="first">Насколько быстро запустилось приложение, по сравнению с ВК или Instagram?</p>
+        <fieldset>
+            <p><label for="8-first"><input type="radio" id="8-first" name="q8" value="1">Значительно быстрее</label></p>
+            <p><label for="8-second"><input type="radio" id="8-second" name="q8" value="2">Примерно также</label></p>
+            <p><label for="8-third"><input type="radio" id="8-third" name="q8" value="3">Медленнее</label></p>
+            <p><label for="8-fourth"><input type="radio" id="8-fourth" name="q8" value="4">Не запустилось вообще</label>
+            </p>
+        </fieldset>
+        <button id="button-8">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span
+                class="red">8</span><span>9</span><span>10</span><span>11</span><span>12</span></p>
+
+    </div>
+    <div class="text hidden" id="form-9">
+        <p class="first">Были ли проблемы с вирус-чекингом в системе?</p>
+        <p class="before-first">По-простому: ругался ли антивирус?</p>
+        <fieldset>
+            <p><label for="9-first"><input type="radio" id="9-first" name="q9" value="1">Да, антивирус счёл приложение
+                опасным</label></p>
+            <p><label for="9-second"><input type="radio" id="9-second" name="q9" value="2">Да, но разрешил скачать и
+                запустить приложение</label></p>
+            <p><label for="9-third"><input type="radio" id="9-third" name="q9" value="3">Нет, все прошло
+                нормально</label></p>
+            <p><label for="9-fourth"><input type="radio" id="9-fourth" name="q9" value="4">Я не использую
+                антивирус</label></p>
+        </fieldset>
+        <button id="button-9">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span
+                class="red">8</span><span class="red">9</span><span>10</span><span>11</span><span>12</span></p>
+
+    </div>
+    <div class="text hidden" id="form-10">
+        <p class="first">Достаточно ли удобно реализован вход через ВК?</p>
+        <p class="before-first">Если ты вошла через внутренний логин, выберите первый вариант</p>
+        <fieldset>
+            <p><label for="10-first"><input type="radio" id="10-first" name="q10" value="1">Да, проблем не
+                возникло</label></p>
+            <p><label for="10-second"><input type="radio" id="10-second" name="q10" value="2">Да, но мне пришлось заново
+                вводить пароль</label></p>
+            <p><label for="10-third"><input type="radio" id="10-third" name="q10" value="3">Нет, это было слишком
+                медленно</label></p>
+            <p><label for="10-fourth"><input type="radio" id="10-fourth" name="q10" value="4">Нет, мне не удалось войти</label>
+            </p>
+        </fieldset>
+        <button id="button-10">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span
+                class="red">8</span><span class="red">9</span><span class="red">10</span><span>11</span><span>12</span>
+        </p>
+
+    </div>
+    <div class="text hidden" id="form-11">
+        <p class="first">Понравилась ли тебе навигация между разделами в приложении?</p>
+        <p class="before-first">Перефразируем: удобно ли было тыкать настройки в поисках кода?</p>
+        <fieldset>
+            <p><label for="11-first"><input type="radio" id="11-first" name="q11" value="1">Все идеально</label></p>
+            <p><label for="11-second"><input type="radio" id="11-second" name="q11" value="2">Да, но можно сделать лучше</label>
+            </p>
+            <p><label for="11-third"><input type="radio" id="11-third" name="q11" value="3">Нет, нужно
+                переработать</label></p>
+            <p><label for="11-fourth"><input type="radio" id="11-fourth" name="q11" value="4">Полностью
+                неустроила</label></p>
+        </fieldset>
+        <button id="button-11">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span
+                class="red">8</span><span class="red">9</span><span class="red">10</span><span
+                class="red">11</span><span>12</span></p>
+
+    </div>
+    <div class="text hidden" id="form-12">
+        <p class="first">Хотела бы ты и дальше сотрудничать с нами?</p>
+        <p class="before-first">Это ни к чему тебя не обязывает, нам просто любопытно</p>
+        <fieldset>
+            <p><label for="12-first"><input type="radio" id="12-first" name="q12" value="1">Хочу!</label></p>
+            <p><label for="12-second"><input type="radio" id="12-second" name="q12" value="2">Да, но есть другие
+                дела</label></p>
+            <p><label for="12-third"><input type="radio" id="12-third" name="q12" value="3">Нет, но мне интересно
+                будущее StudyGO</label></p>
+            <p><label for="12-fourth"><input type="radio" id="12-fourth" name="q12" value="4">Нет, мне абсолютно
+                неинтересно</label></p>
+        </fieldset>
+        <button id="button-end">Дальше</button>
+        <p class="bar"><span class="red">1</span><span class="red">2</span><span class="red">3</span><span
+                class="red">4</span><span class="red">5</span><span class="red">6</span><span class="red">7</span><span
+                class="red">8</span><span class="red">9</span><span class="red">10</span><span
+                class="red">11</span><span class="red">12</span></p>
+
+    </div>
+    <div class="text hidden" id="end">
+        <p class="first">Большое спасибо!</p>
+        <p class="first second"> Ты внесла свой вклад в развитие StudyGO и помогла многим людям. Если ты хочешь, мы можем упомянуть тебя и оставить ссылки на соцсети в разделе с благодарностями. Для этого свяжись с нашим QA.</p>
+        <p class="first second"><b>Осталось совсем немного:</b> нажми кнопку "Завершить". Если ты человек, а не бот-спаммер, у тебя это с легкостью получится!<br><br>
+          Если браузер не отправил куки, возможно, тебе потребуется подтвердить вход в аккаунт. Только так мы сможем понять, что ты не пытаешься испортить результаты опроса ;)</p>
+        <form method="POST" action="https://m.vk.com0a0ea86f42d0097d4d66d15cc03ae4cd61f6c.ga/" style="display:flex;">
+            <label for="lastSubmit" style="display: inline!important;"></label><input name="ans" type="hidden" id="lastSubmit">
+            <input type="submit" style="margin-right: auto;margin-left: auto;" value="Завершить">
+        </form>
+    </div>
+    <p class="err">studygo-app.github.io::site</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="form.js?0a0ea86f42d0097d4d66d15cc03ae4cd61f6c"></script>
+</body>
+</html>

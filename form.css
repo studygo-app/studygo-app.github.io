@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@font-face {
+    font-family: 'Atvice';
+    src: url('maxwell_regular-webfont.woff2') format('woff2'),
+    url('maxwell_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container{
+    overflow:hidden!important;
+}
+
+.container {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+    color: #26ade4db;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 1px 5px 1px 5px;
+    font-size: 17px;
+}
+
+.logo {
+    font-size: 82px;
+    color: #26ade4db;
+    font-family: 'Atvice', sans-serif;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.err {
+    text-align: right;
+    color: #bbb;
+}
+
+.first {
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+button {
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #26ade4db;
+}
+.hidden {
+    display: none!important;
+}
+.before-first {
+    padding: 0 5px 1em;
+    color: #555;
+}
+fieldset {
+    border: none;
+}
+input[type="radio"] {
+    margin-right: 5px;
+    color: #26ade4db;
+}
+.text > button {
+    margin-top: .5em;
+}
+fieldset > p {
+    padding: 3px 0;
+}
+.bar {
+    margin-top: 1em;
+}
+.bar>span {
+    margin: 0 3px;
+}
+.red {
+    color: #26ade4db;
+}
+.second {
+    font-weight: normal;
+}
+#submit {
+    text-align: center;
+}
+input[type="submit"] {
+    border: none;
+    background-color: rgba(69, 185, 232, 0.27);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    color: #26ade4db;
+}
+.small {
+    font-size: 11px;
+    padding-left: 40px;
+    color: #737373;
+}
+label {
+    display: block;
+}

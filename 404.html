@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title>Oops...</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="StudyGO">
+    <meta name="application-name" content="StudyGO">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+        @font-face {
+            font-family: 'Atvice';
+            src: url('maxwell_regular-webfont.woff2') format('woff2'),
+            url('maxwell_regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: #fbfbfb;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        hr {
+            width: 100%;
+            color: #26ade4db;
+        }
+
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            margin: 1px;
+            font-size: 17px;
+        }
+
+        .logo {
+            font-size: 82px;
+            color: #26ade4db;
+            font-family: 'Atvice', sans-serif;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .err {
+            text-align: right;
+            color: #bbb;
+        }
+
+        .first {
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            color: #26ade4db;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="intro">
+        <p class="logo" style="margin-bottom: 12px;margin-top: 12px;">StudyGO</p>
+        <hr>
+    </div>
+    <div class="text">
+        <p class="first">Что-то пошло не так...</p>
+        <p>Сайт находится в разработке, и многое может работать неправильно.<br><br><br>
+            Подождите пару дней и попробуйте снова, мы постараемся все наладить!</p>
+        <p><a href="index.html"><< На главную</a></p>
+    </div>
+    <p class="err">err404:studygo-app.github.io::site</p>
+</div>
+</body>
+</html>
